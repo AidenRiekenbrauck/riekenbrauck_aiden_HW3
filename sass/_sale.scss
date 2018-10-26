@@ -1,0 +1,42 @@
+.sale
+{
+    grid-column: 3;
+    grid-row: 2;
+    font-family: sub_header;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    transition: all .7s ease-in-out;
+}
+
+.sale p{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.saleDesc
+{
+    font-size: .7em;
+    text-align: center;
+    color: #E5E5E5;
+    grid-row: 2;
+}
+
+.sale:hover
+{
+    background-color: #353535;
+
+}
+
+.saleInvert
+{
+    transition: all .7s ease-in-out;
+}
+
+.sale:hover .saleInvert
+{
+    filter: invert(100%);
+    transition-duration: .7s ease-in-out;
+}

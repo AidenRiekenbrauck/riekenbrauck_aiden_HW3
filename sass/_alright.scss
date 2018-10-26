@@ -1,0 +1,42 @@
+.alright
+{
+    grid-column: 2;
+    grid-row: 2;
+    font-family: sub_header;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    transition: all .7s ease-in-out;
+}
+
+.alright p{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.alrightDesc
+{
+    font-size: .7em;
+    text-align: center;
+    color: #E5E5E5;
+    grid-row: 2;
+}
+
+.alright:hover
+{
+    background-color: #353535;
+
+}
+
+.alrightInvert
+{
+    transition: all .7s ease-in-out;
+}
+
+.alright:hover .alrightInvert
+{
+    filter: invert(100%);
+    transition-duration: .7s ease-in-out;
+}

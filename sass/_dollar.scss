@@ -1,0 +1,42 @@
+.dollar
+{
+    grid-column: 4;
+    grid-row: 3;
+    font-family: sub_header;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    transition: all .7s ease-in-out;
+}
+
+.dollar p{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dollarDesc
+{
+    font-size: .7em;
+    text-align: center;
+    color: #E5E5E5;
+    grid-row: 3;
+}
+
+.dollar:hover
+{
+    background-color: #353535;
+
+}
+
+.dollarInvert
+{
+    transition: all .7s ease-in-out;
+}
+
+.dollar:hover .dollarInvert
+{
+    filter: invert(100%);
+    transition-duration: .7s ease-in-out;
+}

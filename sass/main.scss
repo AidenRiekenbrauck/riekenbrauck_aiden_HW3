@@ -1,0 +1,136 @@
+@import '_vars';
+@import '_arrow';
+@import '_trackIcon';
+@import '_wesley';
+@import '_free';
+@import '_king';
+@import '_lyrics';
+@import '_inst';
+@import '_walls';
+@import '_u';
+@import '_alright';
+@import '_sale';
+@import '_momma';
+@import '_politics';
+@import '_dollar';
+@import '_complexion';
+@import '_berry';
+@import '_lie';
+@import '_i';
+@import '_mortal';
+
+
+.hide
+{
+    display: none;
+}
+
+h1{
+    font-family: header;
+    text-align: center;
+}
+
+
+.mainTitle
+{
+    font-size: 1.4em;
+}
+
+.kendrick{
+    font-family: header;
+    text-align: center;
+    font-size: .75em;
+}
+
+body
+{
+    background-color: #E5E5E5;
+}
+
+.moth_container
+{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 14rem;
+    margin-bottom: 3em;
+}
+
+#moth_svg
+{
+    fill: black;
+}
+
+.page_2
+{
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: url(../images/SVG/SVG/Inkblot.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    overflow: visible;
+}
+
+// tracklist start
+.tracklistTitle
+{
+   
+}
+
+.tracklist
+{
+    font-family: header;
+    text-align: center;
+    font-size: .75em;
+    padding-top: 3em;
+    color: grey;
+}
+
+// act 1
+
+.act1
+{
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-rows: 25% 25% auto;
+    
+}
+
+.act2
+{
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-rows: 25% 25% auto;
+    
+}
+
+.act1Title
+{
+    grid-column: 3;
+    margin-bottom: 3em;
+}
+
+
+.feature
+{
+    font-size: .55em;
+    font-weight: 100;
+    line-height: .2em;
+    color: rgb(75, 75, 75);
+}
+
+//poem
+.poem1
+{
+    grid-template-columns: 30% 40% 30%;
+    font-family: sub_header;
+    text-align: center;
+    font-size: .5em;
+    margin-top: 50px;
+    line-height: 100px;
+}
+

@@ -1,0 +1,42 @@
+.complexion
+{
+    grid-column: 2;
+    grid-row: 2;
+    font-family: sub_header;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    transition: all .7s ease-in-out;
+}
+
+.complexion p{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.complexionDesc
+{
+    font-size: .7em;
+    text-align: center;
+    color: #E5E5E5;
+    grid-row: 2;
+}
+
+.complexion:hover
+{
+    background-color: #353535;
+
+}
+
+.complexionInvert
+{
+    transition: all .7s ease-in-out;
+}
+
+.complexion:hover .complexionInvert
+{
+    filter: invert(100%);
+    transition-duration: .7s ease-in-out;
+}
