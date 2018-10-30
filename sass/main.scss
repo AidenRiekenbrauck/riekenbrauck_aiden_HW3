@@ -28,23 +28,32 @@
 h1{
     font-family: header;
     text-align: center;
+    overflow: hidden;
 }
 
 
 .mainTitle
 {
     font-size: 1.4em;
+    color: rgb(161, 161, 161);
 }
 
 .kendrick{
     font-family: header;
     text-align: center;
     font-size: .75em;
+    color: grey;
 }
 
 body
 {
-    background-color: #E5E5E5;
+    background-color: rgb(36, 36, 36);
+    border: 5vw solid black;
+    width: 90%;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: -50;
+    
 }
 
 .moth_container
@@ -52,20 +61,20 @@ body
     width: 200px;
     height: auto;
     margin: 0 auto;
-    margin-top: 14rem;
+    padding-top: 14rem;
     margin-bottom: 3em;
 }
 
 #moth_svg
 {
-    fill: black;
+    fill: rgb(236, 236, 236);
 }
 
 .page_2
 {
     width: 100%;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     background-image: url(../images/SVG/SVG/Inkblot.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -74,44 +83,78 @@ body
 }
 
 // tracklist start
-.tracklistTitle
-{
-   
-}
 
-.tracklist
+
+.tracklist 
 {
     font-family: header;
     text-align: center;
     font-size: .75em;
     padding-top: 3em;
     color: grey;
+    margin-bottom: 20vw;
+}
+
+
+.tracklistTitle
+{
+    color: white;
+}
+
+
+#particles-js
+{
+    height: 100%;
+    position: absolute;
+    z-index: 0;
 }
 
 // act 1
 
 .act1
 {
-    margin-top: 10em;
     display: grid;
-    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-columns: 1px auto 400px auto 1px;
     grid-template-rows: 25% 25% auto;
+    scroll-snap-destination: 100%;
     
 }
 
-.act2
-{
-    margin-top: 3em;
-    display: grid;
-    grid-template-columns: 5% 30% 30% 30% 5%;
-    grid-template-rows: 25% 25% auto;
-    
-}
+
+
+
 
 .act1Title
 {
     grid-column: 3;
-    margin-bottom: 3em;
+    font-size: 25vw;
+    z-index: -10;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    width: 90vw;
+    margin-bottom: 200px;
+    overflow: auto;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;  
+}
+
+.act2Title
+{
+    grid-column: 3;
+    font-size: 18vw;
+    z-index: -10;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    width: 90vw;
+    overflow: auto;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;  /* Need a specific value to work */
 }
 
 
@@ -132,5 +175,14 @@ body
     font-size: .5em;
     margin-top: 50px;
     line-height: 100px;
+    color: rgb(231, 231, 231);
+}
+
+.blk
+{
+    background-color: #535353;
+    grid-column: 3;
+    opacity: .4;
+    
 }
 

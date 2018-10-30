@@ -1,12 +1,13 @@
 .i
 {
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 5;
     font-family: sub_header;
     text-align: center;
     width: 100%;
     height: auto;
     transition: all .7s ease-in-out;
+    margin-bottom: 40px;
 }
 
 .i p{
@@ -22,11 +23,15 @@
     text-align: center;
     color: #E5E5E5;
     grid-row: 3;
+    opacity: 0;
+    transition: all .7s ease-in-out;
 }
 
 .i:hover
 {
     background-color: #353535;
+    opacity: 1;
+    box-shadow: 0 8px 6px -6px black;
 
 }
 
@@ -39,4 +44,15 @@
 {
     filter: invert(100%);
     transition-duration: .7s ease-in-out;
+}
+
+.i:hover .iInvert
+{
+    filter: invert(100%);
+    transition-duration: .7s ease-in-out;
+}
+
+.i:hover .iDesc
+{
+    opacity: 1;
 }

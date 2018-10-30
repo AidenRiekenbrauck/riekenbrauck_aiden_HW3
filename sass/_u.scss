@@ -1,7 +1,7 @@
 .u
 {
-    grid-column: 4;
-    grid-row: 2;
+    grid-column: 3;
+    grid-row: 4;
     font-family: sub_header;
     text-align: center;
     width: 100%;
@@ -22,11 +22,16 @@
     text-align: center;
     color: #E5E5E5;
     grid-row: 2;
+    opacity: 0;
+    transition: all .7s ease-in-out;
 }
 
 .u:hover
 {
     background-color: #353535;
+    opacity: 1;
+    box-shadow: 0 8px 6px -6px black;
+    
 
 }
 
@@ -39,4 +44,15 @@
 {
     filter: invert(100%);
     transition-duration: .7s ease-in-out;
+}
+
+.u:hover .uInvert
+{
+    filter: invert(100%);
+    transition-duration: .7s ease-in-out;
+}
+
+.u:hover .uDesc
+{
+    opacity: 1;
 }
