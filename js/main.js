@@ -10,7 +10,7 @@ new WOW().init();
 let songs = document.querySelectorAll(".data-ref");
 
 function getData() {
-	let targetURL = `./includes/connect.php?info=${this.id}`;
+    let targetURL = `./includes/connect.php?song=${this.id}`;
 
 	fetch(targetURL) //getting data
     .then(res => res.json()) //turning result into a plain JS object
@@ -24,13 +24,13 @@ function getData() {
 }
 
 function showInfoData(data) { //lets see that data
-	const { song } = data;
+	const { song , description} = data;
 
 
 
-    console.log(song);
-    document.querySelector('.description').textContent = song;  
-
+     console.log(song);
+    //  document.querySelector('#description').textContent = song;  
+console.log(description);
 }
 
 songs.forEach( song =>  song.addEventListener('click', getData)); //show data on page c:
