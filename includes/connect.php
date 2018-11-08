@@ -12,7 +12,7 @@ if (isset($_GET["song"])) {
     $ref = $_GET["song"];
     
 
-    $myQuery = "SELECT * FROM tbl_song WHERE song ='$ref'";
+    $myQuery = "SELECT * FROM tbl_song2 WHERE song ='$ref'";
     
 
     $result = mysqli_query($conn, $myQuery);
